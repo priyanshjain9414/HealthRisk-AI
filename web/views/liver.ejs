@@ -1,0 +1,164 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card disease-form-card shadow-lg border-0">
+        <div class="card-header text-center">
+          <h2 class="mb-0">
+            <i class="fa-solid fa-notes-medical me-2"></i>
+            Liver Disease Prediction
+          </h2>
+        </div>
+
+        <div class="card-body p-4">
+          <form action="/liver" method="POST">
+            <!-- Patient Information -->
+            <h4 class="text-success mb-3">Patient Information</h4>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Age </label>
+
+                <input type="number" class="form-control" name="Age" required />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Gender </label>
+
+                <select class="form-select" name="Gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="1">Male</option>
+                  <option value="0">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Bilirubin -->
+            <h4 class="text-success mb-3">Bilirubin Levels</h4>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Total Bilirubin </label>
+
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="Total_Bilirubin"
+                  required
+                />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Direct Bilirubin </label>
+
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="Direct_Bilirubin"
+                  required
+                />
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Liver Enzymes -->
+            <h4 class="text-success mb-3">Liver Enzyme Tests</h4>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label class="form-label"> Alkaline Phosphotase </label>
+
+                <input
+                  type="number"
+                  class="form-control"
+                  name="Alkaline_Phosphotase"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">
+                  Alanine Aminotransferase (ALT)
+                </label>
+
+                <input
+                  type="number"
+                  class="form-control"
+                  name="Alamine_Aminotransferase"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">
+                  Aspartate Aminotransferase (AST)
+                </label>
+
+                <input
+                  type="number"
+                  class="form-control"
+                  name="Aspartate_Aminotransferase"
+                  required
+                />
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Protein Profile -->
+            <h4 class="text-success mb-3">Protein Profile</h4>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label class="form-label"> Total Proteins </label>
+
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="Total_Protiens"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label"> Albumin </label>
+
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="Albumin"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label"> Albumin / Globulin Ratio </label>
+
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="Albumin_and_Globulin_Ratio"
+                  required
+                />
+              </div>
+            </div>
+
+            <button class="btn predict-btn w-100 mt-3">
+              <i class="fa-solid fa-notes-medical me-2"></i>
+              Predict Liver Disease Risk
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

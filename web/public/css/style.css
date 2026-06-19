@@ -1,0 +1,114 @@
+body {
+  background: #f1f5f9;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  background: #1e293b;
+  color: white;
+}
+
+.card {
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  background: white;
+}
+
+.card-header {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  color: white;
+  padding: 0.7rem;
+}
+
+.disease-form-card {
+  box-shadow: 0 10px 30px rgba(15, 118, 110, 0.15);
+}
+
+.form-control {
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+}
+
+.form-control:focus {
+  border-color: #14b8a6;
+  box-shadow: 0 0 0 0.2rem rgba(20, 184, 166, 0.2);
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.btn-danger:hover {
+  background: linear-gradient(135deg, #115e59, #0f766e);
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.alert-success {
+  background: #dcfce7;
+  color: #166534;
+  border: none;
+  border-radius: 12px;
+}
+
+.alert-danger {
+  background: #fee2e2;
+  color: #991b1b;
+  border: none;
+  border-radius: 12px;
+}
+
+.predict-btn {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: 600;
+}
+
+.predict-btn:hover {
+  background: linear-gradient(135deg, #115e59, #0f766e);
+  color: white;
+  transform: translateY(-2px);
+  transition: 0.3s;
+}
+
+.hero-section {
+  background: linear-gradient(
+    135deg,
+    rgba(15, 118, 110, 0.08),
+    rgba(20, 184, 166, 0.12)
+  );
+}
+
+.disease-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.disease-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(15, 118, 110, 0.15);
+}
+
+.disease-card h4 {
+  color: #1e293b;
+  font-weight: 700;
+}
+
+.hero-image {
+  width: 400px;
+  height: 400px;
+  height: auto;
+}

@@ -1,0 +1,285 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-11">
+      <div class="card disease-form-card shadow-lg border-0">
+        <div class="card-header text-center">
+          <h2 class="mb-0">
+            <i class="fa-solid fa-stethoscope me-2"></i>
+            Thyroid Disease Prediction
+          </h2>
+        </div>
+
+        <div class="card-body p-4">
+          <form action="/thyroid" method="POST">
+            <!-- Patient Information -->
+            <h4 class="text-success mb-3">Patient Information</h4>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Age</label>
+
+                <input type="number" class="form-control" name="age" required />
+              </div>
+
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Gender</label>
+
+                <select class="form-select" name="sex" required>
+                  <option value="">Select Gender</option>
+                  <option value="1">Male</option>
+                  <option value="0">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Medical History -->
+            <h4 class="text-success mb-3">Medical History</h4>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label class="form-label">On Thyroxine</label>
+                <select class="form-select" name="on thyroxine" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Query on Thyroxine</label>
+                <select class="form-select" name="query on thyroxine" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Antithyroid Medication</label>
+                <select
+                  class="form-select"
+                  name="on antithyroid medication"
+                  required
+                >
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Currently Sick</label>
+                <select class="form-select" name="sick" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Pregnant</label>
+                <select class="form-select" name="pregnant" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Thyroid Surgery</label>
+                <select class="form-select" name="thyroid surgery" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">I131 Treatment</label>
+                <select class="form-select" name="I131 treatment" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Lithium Usage</label>
+                <select class="form-select" name="lithium" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">Psychological Disorder</label>
+                <select class="form-select" name="psych" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Thyroid Conditions -->
+            <h4 class="text-success mb-3">Thyroid Conditions</h4>
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Query Hypothyroid</label>
+                <select class="form-select" name="query hypothyroid" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Query Hyperthyroid</label>
+                <select class="form-select" name="query hyperthyroid" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Goitre</label>
+                <select class="form-select" name="goitre" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Tumor</label>
+                <select class="form-select" name="tumor" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label class="form-label">Hypopituitary</label>
+                <select class="form-select" name="hypopituitary" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Test Availability -->
+            <h4 class="text-success mb-3">Test Availability</h4>
+
+            <div class="row">
+              <div class="col-md-3 mb-3">
+                <label class="form-label">TSH Measured</label>
+                <select class="form-select" name="TSH measured" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label class="form-label">T3 Measured</label>
+                <select class="form-select" name="T3 measured" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label class="form-label">TT4 Measured</label>
+                <select class="form-select" name="TT4 measured" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <div class="col-md-3 mb-3">
+                <label class="form-label">T4U Measured</label>
+                <select class="form-select" name="T4U measured" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </div>
+
+            <hr />
+
+            <!-- Laboratory Results -->
+            <h4 class="text-success mb-3">Laboratory Results</h4>
+
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <label class="form-label">TSH</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="TSH"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">T3</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="T3"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">TT4</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="TT4"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">T4U</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="T4U"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">FTI</label>
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="FTI"
+                  required
+                />
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <label class="form-label">FTI Measured</label>
+                <select class="form-select" name="FTI measured" required>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn predict-btn w-100 mt-3">
+              <i class="fa-solid fa-stethoscope me-2"></i>
+              Predict Thyroid Disease Risk
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

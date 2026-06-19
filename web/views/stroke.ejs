@@ -1,0 +1,153 @@
+<% layout("/layouts/boilerplate") %>
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="card disease-form-card shadow-lg border-0">
+        <div class="card-header text-center">
+          <h2 class="mb-0">
+            <i class="fa-solid fa-brain me-2"></i>
+            Stroke Prediction
+          </h2>
+        </div>
+
+        <div class="card-body p-4">
+          <form action="/stroke" method="POST">
+            <div class="row">
+              <!-- Gender -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Gender</label>
+
+                <select class="form-select" name="gender" required>
+                  <option value="">Select Gender</option>
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+
+              <!-- Age -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label">Age</label>
+
+                <input
+                  type="number"
+                  class="form-control"
+                  name="age"
+                  min="1"
+                  max="120"
+                  required
+                />
+              </div>
+
+              <!-- Hypertension -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Hypertension </label>
+
+                <select class="form-select" name="hypertension" required>
+                  <option value="">Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <!-- Heart Disease -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Heart Disease </label>
+
+                <select class="form-select" name="heart_disease" required>
+                  <option value="">Select</option>
+                  <option value="1">Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+
+              <!-- Married -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Ever Married </label>
+
+                <select class="form-select" name="ever_married" required>
+                  <option value="">Select</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+
+              <!-- Work Type -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Work Type </label>
+
+                <select class="form-select" name="work_type" required>
+                  <option value="">Select</option>
+                  <option value="Private">Private</option>
+                  <option value="Self-employed">Self Employed</option>
+                  <option value="Govt_job">Government Job</option>
+                  <option value="children">Child</option>
+                  <option value="Never_worked">Never Worked</option>
+                </select>
+              </div>
+
+              <!-- Residence -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Residence Type </label>
+
+                <select class="form-select" name="Residence_type" required>
+                  <option value="">Select</option>
+                  <option value="Urban">Urban</option>
+                  <option value="Rural">Rural</option>
+                </select>
+              </div>
+
+              <!-- Glucose -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Average Glucose Level </label>
+
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="avg_glucose_level"
+                  required
+                />
+              </div>
+
+              <!-- BMI -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> BMI </label>
+
+                <input
+                  type="number"
+                  step="0.01"
+                  class="form-control"
+                  name="bmi"
+                  required
+                />
+              </div>
+
+              <!-- Smoking -->
+              <div class="col-md-6 mb-3">
+                <label class="form-label"> Smoking Status </label>
+
+                <select class="form-select" name="smoking_status" required>
+                  <option value="">Select</option>
+
+                  <option value="never smoked">Never Smoked</option>
+
+                  <option value="formerly smoked">Formerly Smoked</option>
+
+                  <option value="smokes">Currently Smokes</option>
+
+                  <option value="Unknown">Unknown</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="btn predict-btn w-100 mt-3">
+              <i class="fa-solid fa-brain me-2"></i>
+              Predict Stroke Risk
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

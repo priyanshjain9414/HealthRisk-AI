@@ -1,0 +1,142 @@
+<% layout("/layouts/boilerplate") %>
+
+<!-- Hero Section -->
+
+<section class="hero-section py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <span class="badge bg-success-subtle text-success mb-3">
+          AI Powered Healthcare
+        </span>
+
+        <h1 class="display-4 fw-bold mb-3">Multi Disease Prediction System</h1>
+
+        <p class="lead text-muted mb-4">
+          Predict potential health risks using Machine Learning models. Select a
+          disease below, enter medical parameters and get instant prediction
+          results.
+        </p>
+
+        <a href="#prediction-models" class="btn predict-btn btn-lg">
+          Start Prediction
+        </a>
+      </div>
+
+      <div class="col-lg-6 text-center">
+        <img src="/Medical.png" alt="Healthcare AI" class="hero-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Disease Cards -->
+<hr />
+
+<section id="prediction-models" class="pb-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">Disease Prediction Models</h2>
+
+      <p class="text-muted">Choose a disease and start prediction</p>
+    </div>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <a href="/diabetes" class="text-decoration-none">
+          <div class="card disease-card h-100">
+            <div class="card-body text-center p-4">
+              <i class="fa-solid fa-droplet display-5 text-danger mb-3"></i>
+              <h4>Diabetes</h4>
+              <p class="text-muted">
+                Predict diabetes risk using patient health parameters.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <a href="/heart" class="text-decoration-none">
+          <div class="card disease-card h-100">
+            <div class="card-body text-center p-4">
+              <i class="fa-solid fa-heart-pulse display-5 text-danger mb-3"></i>
+              <h4>Heart Disease</h4>
+              <p class="text-muted">
+                Assess potential cardiovascular disease risk.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <a href="/kidney" class="text-decoration-none">
+          <div class="card disease-card h-100">
+            <div class="card-body text-center p-4">
+              <i class="fa-solid fa-kidneys display-5 text-primary mb-3"></i>
+              <h4>Kidney Disease</h4>
+              <p class="text-muted">Evaluate kidney disease probability.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <a href="/liver" class="text-decoration-none">
+          <div class="card disease-card h-100">
+            <div class="card-body text-center p-4">
+              <i
+                class="fa-solid fa-notes-medical display-5 text-warning mb-3"
+              ></i>
+              <h4>Liver Disease</h4>
+              <p class="text-muted">Analyze liver health indicators.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <a href="/thyroid" class="text-decoration-none">
+          <div class="card disease-card h-100">
+            <div class="card-body text-center p-4">
+              <i class="fa-solid fa-stethoscope display-5 text-info mb-3"></i>
+              <h4>Thyroid Disease</h4>
+              <p class="text-muted">
+                Predict thyroid-related health conditions.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <a href="/anemia" class="text-decoration-none">
+          <div class="card disease-card h-100">
+            <div class="card-body text-center p-4">
+              <i class="fa-solid fa-vial display-5 text-danger mb-3"></i>
+              <h4>Anemia</h4>
+              <p class="text-muted">
+                Detect anemia risk using blood parameters.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="col-md-6 col-lg-4 mx-auto">
+        <a href="/stroke" class="text-decoration-none">
+          <div class="card disease-card h-100">
+            <div class="card-body text-center p-4">
+              <i class="fa-solid fa-brain display-5 text-success mb-3"></i>
+              <h4>Stroke</h4>
+              <p class="text-muted">
+                Estimate stroke risk using clinical indicators.
+              </p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
